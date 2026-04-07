@@ -368,51 +368,50 @@
   z-index: 1;
 }
 
-/* Drips: shorter vertical span (brush → bucket); nudge with translateY via top % */
+/* Drips: brush → bucket; larger, faster, nudged left */
 .paint-drip,
 .paint-drip2 {
   top: 51%;
-  height: 0.54rem;
+  height: 0.72rem;
   transform: scale(1);
   transform-origin: top center;
   animation-name: drip;
   animation-timing-function: ease-in;
   animation-iteration-count: infinite;
   position: absolute;
-  left: 24.5%;
-  margin-left: -0.5rem;
+  left: 21.5%;
+  margin-left: -0.65rem;
 }
 
 .paint-drip {
   animation-delay: 0s;
-  animation-duration: 3s;
+  animation-duration: 1.65s;
 }
 
 .paint-drip2 {
-  left: 27.5%;
-  margin-left: -0.5rem;
-  animation-delay: 1.5s;
-  animation-duration: 2.5s;
+  left: 24.5%;
+  margin-left: -0.65rem;
+  animation-delay: 0.82s;
+  animation-duration: 1.65s;
 }
 
-/* Lower bound ~2% higher than before (82% vs 84%) */
 @keyframes drip {
   0% {
     top: 51%;
-    height: 0.41rem;
+    height: 0.55rem;
     opacity: 1;
   }
   18% {
     top: 59%;
-    height: 0.78rem;
+    height: 1.05rem;
   }
   45% {
     top: 69%;
-    height: 1.13rem;
+    height: 1.52rem;
   }
   72% {
     top: 78%;
-    height: 1.38rem;
+    height: 1.88rem;
   }
   78% {
     top: 82%;
