@@ -375,7 +375,7 @@
   animation-timing-function: ease-in;
   animation-iteration-count: infinite;
   position: absolute;
-  left: 27%;
+  left: 24.5%;
   margin-left: -0.5rem;
 }
 
@@ -385,7 +385,7 @@
 }
 
 .paint-drip2 {
-  left: 30%;
+  left: 27.5%;
   margin-left: -0.5rem;
   animation-delay: 1.5s;
   animation-duration: 2.5s;
