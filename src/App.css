@@ -140,7 +140,7 @@
 
 .hero__grid {
   width: 100%;
-  max-width: 1320px;
+  max-width: min(1480px, 100%);
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -150,14 +150,15 @@
 
 @media only screen and (min-width: 901px) {
   .hero__grid {
-    /* Slightly favor copy column so the headline fits on one line more often */
-    grid-template-columns: minmax(0, 1.22fr) minmax(0, 1.12fr);
+    /* Extra width for copy column so hero title strip fits without horizontal scroll */
+    grid-template-columns: minmax(0, 1.62fr) minmax(0, 0.88fr);
   }
 }
 
 .info {
   width: 100%;
-  max-width: min(46rem, 100%);
+  max-width: 100%;
+  min-width: 0;
   margin: 0;
   color: #2a2a2a;
 }
@@ -222,11 +223,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  overflow-x: auto;
-  overflow-y: hidden;
-  -webkit-overflow-scrolling: touch;
-  overscroll-behavior-x: contain;
-  scrollbar-width: thin;
+  overflow-x: visible;
+  min-width: 0;
 }
 
 /* Single horizontal row: text + icon + text + icon … — no wrap; scroll if needed */
@@ -540,7 +538,7 @@
   }
 
   .info {
-    max-width: min(44rem, 100%);
+    max-width: 100%;
     margin: 0 auto;
   }
 
