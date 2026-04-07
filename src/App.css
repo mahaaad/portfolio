@@ -352,12 +352,13 @@
   pointer-events: none;
 }
 
-/* Bucket: not inside .mahad-scene — % of full box */
+/* Bucket: not inside .mahad-scene — % of full box.
+   When width shrinks, height drops ~proportionally; increase bottom % so the top edge stays put. */
 .bucket {
   position: absolute;
-  bottom: 4.25%;
+  bottom: 5.65%;
   left: 9%;
-  width: 33%;
+  width: 31%;
   height: auto;
   max-width: none;
   z-index: 1;
