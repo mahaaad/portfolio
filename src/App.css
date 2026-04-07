@@ -328,11 +328,11 @@
   height: auto;
 }
 
-/* Character + drips scaled down; bucket is a sibling so it stays large */
+/* Character + drips scaled; bucket is a sibling so it is sized independently */
 .mahad-scene {
   position: absolute;
   inset: 0;
-  transform: scale(0.42);
+  transform: scale(0.84);
   transform-origin: bottom center;
   pointer-events: none;
   z-index: 0;
@@ -352,12 +352,12 @@
   pointer-events: none;
 }
 
-/* Bucket: not inside .mahad-scene — % of full box, much larger than the scaled character */
+/* Bucket: not inside .mahad-scene — % of full box */
 .bucket {
   position: absolute;
-  bottom: 4%;
-  left: 8%;
-  width: 42%;
+  bottom: 4.25%;
+  left: 9%;
+  width: 33%;
   height: auto;
   max-width: none;
   z-index: 1;
