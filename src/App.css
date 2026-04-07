@@ -134,7 +134,11 @@
   align-items: center;
   justify-content: center;
   position: relative;
-  padding: calc(4rem + env(safe-area-inset-top)) 1.25rem 3rem;
+  /* Extra left inset so .info clears fixed .navicons (rail + gap + safe area) */
+  padding-top: calc(4rem + env(safe-area-inset-top));
+  padding-right: 1.25rem;
+  padding-bottom: 3rem;
+  padding-left: max(1.25rem, calc(env(safe-area-inset-left) + 4.85rem));
   scroll-margin-top: 3.5rem;
 }
 
