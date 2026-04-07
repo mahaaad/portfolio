@@ -115,7 +115,7 @@ function App() {
             </FadeIn>
 
             <div className="titles">
-              <FadeIn delay={250} duration={1500}>
+              <FadeIn className="titles__inner" delay={250} duration={1500}>
                 <p>
                   <span className="main-green">Software</span> Engineer
                 </p>
