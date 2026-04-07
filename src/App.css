@@ -140,7 +140,7 @@
 
 .hero__grid {
   width: 100%;
-  max-width: min(1600px, 100%);
+  max-width: min(1480px, 100%);
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -150,8 +150,8 @@
 
 @media only screen and (min-width: 901px) {
   .hero__grid {
-    /* Copy + illustration: favor a wider art column so the vector reads larger */
-    grid-template-columns: minmax(0, 1.42fr) minmax(0, 1.12fr);
+    /* Extra width for copy column so hero title strip fits without horizontal scroll */
+    grid-template-columns: minmax(0, 1.62fr) minmax(0, 0.88fr);
   }
 }
 
@@ -321,7 +321,7 @@
 .mahad-container2 {
   position: relative;
   width: 100%;
-  max-width: min(820px, 100%);
+  max-width: min(620px, 100%);
   margin: 0 auto;
   /* Reserve layout like the artwork before paint (matches mahad-2024.svg viewBox) */
   aspect-ratio: 474.2 / 664.7;
@@ -342,12 +342,12 @@
   pointer-events: none;
 }
 
-/* Bucket: % of illustration box only — scales with character, not vw */
+/* Bucket: % of illustration box — larger than before; character box unchanged */
 .bucket {
   position: absolute;
-  bottom: 7%;
-  left: 17%;
-  width: 12.5%;
+  bottom: 6.5%;
+  left: 15.5%;
+  width: 17.5%;
   height: auto;
   max-width: none;
 }
@@ -568,7 +568,7 @@
   }
 
   .mahad-container2 {
-    max-width: min(720px, 94vw);
+    max-width: min(560px, 92vw);
   }
 }
 
