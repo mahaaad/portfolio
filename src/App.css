@@ -328,6 +328,16 @@
   height: auto;
 }
 
+/* Character + drips scaled down; bucket is a sibling so it stays large */
+.mahad-scene {
+  position: absolute;
+  inset: 0;
+  transform: scale(0.42);
+  transform-origin: bottom center;
+  pointer-events: none;
+  z-index: 0;
+}
+
 .mahad-1 {
   position: absolute;
   left: 0;
@@ -342,14 +352,15 @@
   pointer-events: none;
 }
 
-/* Bucket: % of illustration box — larger than before; character box unchanged */
+/* Bucket: not inside .mahad-scene — % of full box, much larger than the scaled character */
 .bucket {
   position: absolute;
-  bottom: 6.5%;
-  left: 15.5%;
-  width: 17.5%;
+  bottom: 4%;
+  left: 8%;
+  width: 42%;
   height: auto;
   max-width: none;
+  z-index: 1;
 }
 
 /* Drips: shorter vertical span (brush → bucket); nudge with translateY via top % */

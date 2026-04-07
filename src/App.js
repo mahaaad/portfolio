@@ -141,10 +141,12 @@ function App() {
 
           <div className="mahad-container">
             <div className="mahad-container2">
-              <img className="mahad-1" src="images/graphics/mahad-2024.svg" alt="" />
+              <div className="mahad-scene" aria-hidden="true">
+                <img className="mahad-1" src="images/graphics/mahad-2024.svg" alt="" />
+                <img className="paint-drip" src="images/icons/paint-drop.svg" alt="" />
+                <img className="paint-drip2" src="images/icons/paint-drop.svg" alt="" />
+              </div>
               <img className="bucket" src="images/graphics/bucketsvg.svg" alt="" />
-              <img className="paint-drip" src="images/icons/paint-drop.svg" alt="" />
-              <img className="paint-drip2" src="images/icons/paint-drop.svg" alt="" />
             </div>
           </div>
         </div>
