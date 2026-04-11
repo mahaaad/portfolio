@@ -174,7 +174,11 @@
   line-height: 1.05;
   text-align: left;
   color: #363636;
-  overflow: visible;
+  max-width: 100%;
+  overflow-x: auto;
+  overflow-y: visible;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: thin;
 }
 
 /* CSS-only caret — no GIF grey fringe in dark mode */
@@ -227,8 +231,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  overflow-x: visible;
+  overflow-x: auto;
+  overflow-y: hidden;
   min-width: 0;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: thin;
 }
 
 /* Single horizontal row: text + icon + text + icon … — no wrap; scroll if needed */
@@ -274,7 +281,9 @@
   color: #868181;
   font-size: clamp(1rem, 1.8vw, 1.15rem);
   font-weight: 300;
-  max-width: none;
+  max-width: 100%;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
 }
 
 .sectiontitle {

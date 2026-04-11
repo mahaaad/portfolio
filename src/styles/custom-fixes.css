@@ -225,6 +225,8 @@ body,
   padding-left: 2.5rem !important;
   padding-right: 2.5rem !important;
   padding-bottom: 3.25rem !important;
+  overflow-x: hidden !important;
+  overflow-y: visible !important;
 }
 
 /* Window Chrome Header */
@@ -318,6 +320,8 @@ body,
 .info > *:not(.info-window-controls) {
   position: relative;
   z-index: 1;
+  min-width: 0;
+  max-width: 100%;
 }
 
 /* Dark mode adjustments for info section */
