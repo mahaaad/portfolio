@@ -182,7 +182,7 @@
   right: 0;
   top: calc(100% - 2px);
   width: 100%;
-  height: clamp(2.75rem, 5.5vw, 5rem);
+  height: clamp(3.25rem, 6.5vw, 6.25rem);
   pointer-events: none;
   z-index: 2;
   display: block;

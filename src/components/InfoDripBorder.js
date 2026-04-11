@@ -1,43 +1,38 @@
 import React from 'react';
 
 /**
- * Bucket-style mint drip edge (flat top, irregular bottom + offset shadow).
+ * Bucket-style mint drip: flat rim + heavy teardrop drips (deeper + more fluid).
  * Tiled horizontally under the hero .info card.
  */
-const TILE_W = 256;
-const TILE_H = 72;
+const TILE_W = 440;
+const TILE_H = 118;
 
-// Single tile: flat top; bottom edge = twin thin drips, medium, longer, shallow wave,
-// longest bulb, stubby, medium, short (bucket-rim style).
+// Rim at y≈5; drip tips reach y≈96–108 for a clearly “hanging” read.
 const DRIP_TILE_PATH =
   'M0,0 H' +
   TILE_W +
-  ' V4.5 H250' +
-  ' C248.5,4.5 248,5.5 247,9 C246,14 245,20 244,15 C243,10 242,5 240,4.5' +
+  ' V5 H410' +
+  ' C407,5 405,7 403,14 C401,26 399,52 397,72 C395,92 392,106 388,108 C384,110 380,106 378,96 C376,82 375,55 374,34 C373,18 372,8 370,5' +
+  ' H348' +
+  ' C346,5 344,6 342,11 C340,20 338,42 336,58 C334,74 332,80 329,74 C326,64 325,42 324,24 C323,12 322,6 320,5' +
+  ' H298' +
+  ' C295,5 293,7 291,14 C289,28 287,58 285,78 C283,98 280,110 276,112 C272,114 268,110 266,98 C264,80 263,48 262,26 C261,12 260,6 258,5' +
   ' H232' +
-  ' C230,4.5 228,5.5 226,9 C224,16 222,28 220,34 C218,40 216,36 214,26 C212,16 210,6 208,4.5' +
-  ' H200' +
-  ' C198,4.5 196,5.5 194,8 C192,12 190,18 188,14 C186,10 184,5 182,4.5' +
-  ' H172' +
-  ' C168,4.5 164,6 160,10 C156,20 152,38 148,48 C144,58 140,60 137,50 C134,40 132,26 130,16 C128,8 126,4.5 122,4.5' +
-  ' H112' +
-  ' C110,4.5 108,4.5 106,5.5 104,7 C102,8.5 100,9.5 98,8.5 C96,7.5 94,5.5 92,4.5' +
-  ' H86' +
-  ' C84,4.5 82,5.5 80,7 C78,8.5 76,9.5 74,8.5 C72,7.5 70,5.5 68,4.5' +
-  ' H62' +
-  ' C60,4.5 58,5.5 56,8 C54,14 52,28 50,34 C48,40 46,36 44,24 C42,12 40,6 38,4.5' +
+  ' C230,5 228,6 226,10 C224,16 222,24 220,20 C218,16 217,9 215,6 C213,5 211,5 208,5' +
+  ' H188' +
+  ' C186,5 184,7 182,14 C180,26 178,48 176,62 C174,74 172,76 169,70 C166,60 165,40 164,22 C163,10 162,6 160,5' +
+  ' H138' +
+  ' C136,5 134,6 132,10 C130,18 128,38 126,54 C124,70 122,76 119,70 C116,60 115,38 114,20 C113,10 112,6 110,5' +
+  ' H88' +
+  ' C86,5 84,7 82,14 C80,28 78,58 76,80 C74,100 71,112 67,114 C63,116 59,112 57,100 C55,82 54,50 53,28 C52,12 51,6 49,5' +
   ' H28' +
-  ' C26,4.5 24,5.5 22,8 C20,14 18,24 16,20 C14,16 12,8 10,4.5' +
-  ' H8' +
-  ' C7.5,4.5 7,5 6.5,9 C6,16 5.5,22 5,18 C4.5,14 4,6 3.5,4.5' +
-  ' H2.5' +
-  ' C2,4.5 1.5,5 1.2,10 C0.9,16 0.6,20 0.4,16 C0.2,12 0.1,6 0,4.5' +
+  ' C26,5 24,6 22,10 C20,18 18,32 16,40 C14,46 12,44 10,34 C8,22 7,12 6,8 C5,6 4,5 2,5' +
+  ' H0' +
   ' L0,0 Z';
 
 export default function InfoDripBorder() {
   const patternId = React.useId().replace(/:/g, '');
-
-  const repeats = 5;
+  const repeats = 2;
 
   return (
     <svg
@@ -56,10 +51,10 @@ export default function InfoDripBorder() {
           x={0}
           y={0}
         >
-          <g transform="translate(-2.5, 2.5)">
-            <path d={DRIP_TILE_PATH} fill="#6BCB8E" fillOpacity="0.85" />
+          <g transform="translate(-4, 3.5)">
+            <path d={DRIP_TILE_PATH} fill="#4fb56f" fillOpacity="0.88" />
           </g>
-          <path d={DRIP_TILE_PATH} fill="#A8E6CF" />
+          <path d={DRIP_TILE_PATH} fill="#9fe8c8" />
         </pattern>
       </defs>
       <rect width="100%" height="100%" fill={`url(#${patternId})`} />
