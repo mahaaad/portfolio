@@ -102,41 +102,50 @@ function App() {
 
       <section id="top" className="hero">
         <div className="hero__grid">
-          <div className="info">
-            <InfoWindowChrome />
-            <FadeIn>
-              <h1 className="name-title">
-                <span className="title-tags">{'<'}</span>
-                <span className="name-grey">Mahad</span>
-                Rehan /
-                <span className="title-tags">{'>'}</span>
-                <span className="blink-cursor" aria-hidden="true" />
-              </h1>
-            </FadeIn>
-
-            <div className="titles">
-              <FadeIn className="titles__inner" delay={250} duration={1500}>
-                <p>
-                  <span className="main-green">Software</span> Engineer
-                </p>
-                <img src="images/icons/computericon.svg" alt="" />
-                <p>
-                  <span className="main-green">User Interface</span> Designer
-                </p>
-                <img src="images/icons/usericon.svg" alt="" />
-                <p>
-                  <span className="main-green">CS</span> @ Queen&apos;s University
-                </p>
-                <img src="images/icons/educationicon.svg" alt="" />
+          <div className="info-wrap">
+            <div className="info">
+              <InfoWindowChrome />
+              <FadeIn>
+                <h1 className="name-title">
+                  <span className="title-tags">{'<'}</span>
+                  <span className="name-grey">Mahad</span>
+                  Rehan /
+                  <span className="title-tags">{'>'}</span>
+                  <span className="blink-cursor" aria-hidden="true" />
+                </h1>
               </FadeIn>
+
+              <div className="titles">
+                <FadeIn className="titles__inner" delay={250} duration={1500}>
+                  <p>
+                    <span className="main-green">Software</span> Engineer
+                  </p>
+                  <img src="images/icons/computericon.svg" alt="" />
+                  <p>
+                    <span className="main-green">User Interface</span> Designer
+                  </p>
+                  <img src="images/icons/usericon.svg" alt="" />
+                  <p>
+                    <span className="main-green">CS</span> @ Queen&apos;s University
+                  </p>
+                  <img src="images/icons/educationicon.svg" alt="" />
+                </FadeIn>
+              </div>
+
+              <p className="info-paragraph">
+                <FadeIn delay={1500} duration={1500}>
+                  Toronto-based developer and designer passionate about bringing ideas to life through interactive web
+                  experiences. Let&apos;s build something amazing together.
+                </FadeIn>
+              </p>
             </div>
 
-            <p className="info-paragraph">
-              <FadeIn delay={1500} duration={1500}>
-                Toronto-based developer and designer passionate about bringing ideas to life through interactive web
-                experiences. Let&apos;s build something amazing together.
-              </FadeIn>
-            </p>
+            {/* Paint drips beneath the info card */}
+            <div className="info-drips" aria-hidden="true">
+              <img className="info-drip info-drip--1" src="images/icons/paint-drop.svg" alt="" />
+              <img className="info-drip info-drip--2" src="images/icons/paint-drop.svg" alt="" />
+              <img className="info-drip info-drip--3" src="images/icons/paint-drop.svg" alt="" />
+            </div>
           </div>
 
           <div className="mahad-container">
