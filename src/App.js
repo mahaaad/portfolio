@@ -140,12 +140,33 @@ function App() {
               </p>
             </div>
 
-            {/* Paint drips beneath the info card */}
-            <div className="info-drips" aria-hidden="true">
-              <img className="info-drip info-drip--1" src="images/icons/paint-drop.svg" alt="" />
-              <img className="info-drip info-drip--2" src="images/icons/paint-drop.svg" alt="" />
-              <img className="info-drip info-drip--3" src="images/icons/paint-drop.svg" alt="" />
-            </div>
+            {/* Paint drip border beneath the info card */}
+            <svg
+              className="info-drip-border"
+              viewBox="0 0 600 60"
+              preserveAspectRatio="none"
+              xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true"
+            >
+              {/* Continuous drip silhouette: flat top, organic drips hanging down */}
+              <path
+                d="
+                  M0,0 L600,0 L600,4
+                  C580,4 572,4 568,6 C564,10 562,18 558,22 C554,26 548,22 544,14 C540,8 536,4 528,4
+                  C510,4 490,4 478,4
+                  C470,4 466,6 462,12 C458,20 454,32 450,38 C446,44 440,46 436,40 C432,34 430,22 426,14 C422,8 418,4 410,4
+                  C390,4 360,4 340,4
+                  C332,4 328,6 324,10 C320,16 318,24 314,28 C310,32 306,28 302,20 C298,14 294,4 286,4
+                  C270,4 250,4 238,4
+                  C230,4 226,6 222,14 C218,24 214,40 210,48 C206,54 200,56 196,48 C192,40 190,26 186,16 C182,10 178,4 170,4
+                  C150,4 120,4 105,4
+                  C98,4 94,6 90,10 C86,16 84,26 80,30 C76,34 72,30 68,22 C64,16 60,4 52,4
+                  C35,4 15,4 0,4
+                  Z
+                "
+                fill="#93E9BE"
+              />
+            </svg>
           </div>
 
           <div className="mahad-container">
