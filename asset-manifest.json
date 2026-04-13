@@ -1,13 +1,20 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.71e09705.css",
-    "main.js": "/portfolio/static/js/main.6b560a4a.js",
+    "main.css": "/portfolio/static/css/main.997ab2bc.css",
+    "main.js": "/portfolio/static/js/main.73fe7897.js",
+    "static/media/showcase.gif": "/portfolio/static/media/showcase.f01a2897325adc139ef3.gif",
+    "static/media/imad.png": "/portfolio/static/media/imad.4252345d556f75727b60.png",
+    "static/media/andrew.png": "/portfolio/static/media/andrew.9ad79a5adcf8e16315e7.png",
+    "static/media/PSFF_poster_secondary_2017_finalprint-02.png": "/portfolio/static/media/PSFF_poster_secondary_2017_finalprint-02.ac55957ebbe7b4d699c8.png",
+    "static/media/original-webp": "/portfolio/static/media/original-7db2a9059d1c794d6a9481084ac0ce18.978a84861a91dffcf86b.webp",
+    "static/media/waterdrinkreminder2.png": "/portfolio/static/media/waterdrinkreminder2.e11d9c092f79063bb1f1.png",
+    "static/media/first-pixel-art-for-lo-fi-beats-video-v0-wz8d6niyy0661.webp": "/portfolio/static/media/first-pixel-art-for-lo-fi-beats-video-v0-wz8d6niyy0661.171b07ae155257d747f2.webp",
     "index.html": "/portfolio/index.html",
-    "main.71e09705.css.map": "/portfolio/static/css/main.71e09705.css.map",
-    "main.6b560a4a.js.map": "/portfolio/static/js/main.6b560a4a.js.map"
+    "main.997ab2bc.css.map": "/portfolio/static/css/main.997ab2bc.css.map",
+    "main.73fe7897.js.map": "/portfolio/static/js/main.73fe7897.js.map"
   },
   "entrypoints": [
-    "static/css/main.71e09705.css",
-    "static/js/main.6b560a4a.js"
+    "static/css/main.997ab2bc.css",
+    "static/js/main.73fe7897.js"
   ]
 }
