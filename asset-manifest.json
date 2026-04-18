@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "./static/css/main.00050ada.css",
-    "main.js": "./static/js/main.d9a6fbec.js",
+    "main.css": "./static/css/main.71d9913c.css",
+    "main.js": "./static/js/main.d4d7c3a4.js",
     "static/media/showcase.gif": "./static/media/showcase.f01a2897325adc139ef3.gif",
     "static/media/imad.png": "./static/media/imad.4252345d556f75727b60.png",
     "static/media/andrew.png": "./static/media/andrew.9ad79a5adcf8e16315e7.png",
@@ -10,11 +10,11 @@
     "static/media/waterdrinkreminder2.png": "./static/media/waterdrinkreminder2.e11d9c092f79063bb1f1.png",
     "static/media/first-pixel-art-for-lo-fi-beats-video-v0-wz8d6niyy0661.webp": "./static/media/first-pixel-art-for-lo-fi-beats-video-v0-wz8d6niyy0661.171b07ae155257d747f2.webp",
     "index.html": "./index.html",
-    "main.00050ada.css.map": "./static/css/main.00050ada.css.map",
-    "main.d9a6fbec.js.map": "./static/js/main.d9a6fbec.js.map"
+    "main.71d9913c.css.map": "./static/css/main.71d9913c.css.map",
+    "main.d4d7c3a4.js.map": "./static/js/main.d4d7c3a4.js.map"
   },
   "entrypoints": [
-    "static/css/main.00050ada.css",
-    "static/js/main.d9a6fbec.js"
+    "static/css/main.71d9913c.css",
+    "static/js/main.d4d7c3a4.js"
   ]
 }
