@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "./static/css/main.71d9913c.css",
+    "main.css": "./static/css/main.a3b969f8.css",
     "main.js": "./static/js/main.19d56852.js",
     "static/media/showcase.gif": "./static/media/showcase.f01a2897325adc139ef3.gif",
     "static/media/imad.png": "./static/media/imad.4252345d556f75727b60.png",
@@ -10,11 +10,11 @@
     "static/media/waterdrinkreminder2.png": "./static/media/waterdrinkreminder2.e11d9c092f79063bb1f1.png",
     "static/media/first-pixel-art-for-lo-fi-beats-video-v0-wz8d6niyy0661.webp": "./static/media/first-pixel-art-for-lo-fi-beats-video-v0-wz8d6niyy0661.171b07ae155257d747f2.webp",
     "index.html": "./index.html",
-    "main.71d9913c.css.map": "./static/css/main.71d9913c.css.map",
+    "main.a3b969f8.css.map": "./static/css/main.a3b969f8.css.map",
     "main.19d56852.js.map": "./static/js/main.19d56852.js.map"
   },
   "entrypoints": [
-    "static/css/main.71d9913c.css",
+    "static/css/main.a3b969f8.css",
     "static/js/main.19d56852.js"
   ]
 }
